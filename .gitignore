@@ -1,0 +1,18 @@
+# Ignore build and cache files
+/build
+/.gradle
+/.idea
+/local.properties
+/.cxx
+/captures
+/.externalNativeBuild
+/.settings
+*.iml
+
+# Ignore generated APKs & logs
+*.apk
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
