@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EkKoshishAUr</string>
+    <string name="welcome_user_please_sign_in_using_your_email_id_and_password_or_through_google_sign_in_to_begin">Welcome User, \nPlease sign in using your email id and password or through google sign in to \nbegin</string>
 </resources>

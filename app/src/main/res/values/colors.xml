@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#F2EFE7</color>
+    <color name="waveBalck">#212121</color>
+    <color name="shiftColor">#8F87F1</color>
+    <color name="notBlack">#2A3335</color>
+    <color name="neela">#A1E3F9</color>
 </resources>

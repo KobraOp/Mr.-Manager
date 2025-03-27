@@ -7,7 +7,7 @@
 /captures
 /.externalNativeBuild
 /.settings
-/google-services.json
+/app/google-services.json
 *.iml
 
 # Ignore generated APKs & logs
