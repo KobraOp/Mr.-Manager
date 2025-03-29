@@ -1,7 +1,33 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.EkKoshishAUr" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <!-- Base application theme (Night Mode) -->
+    <style name="Base.Theme.EkKoshishAUr" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/waveBalck</item>  <!-- Black Top Bar -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- White Text on Top Bar -->
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">#03DAC5</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Background & Surface -->
+        <item name="android:colorBackground">#121212</item>  <!-- Dark background -->
+        <item name="colorSurface">#1E1E1E</item>  <!-- Dark gray surface -->
+        <item name="colorOnSurface">#FFFFFF</item>  <!-- White text -->
+
+        <!-- Status Bar & Navigation Bar -->
+        <item name="android:statusBarColor">#000000</item>  <!-- Black Status Bar -->
+        <item name="android:navigationBarColor">#000000</item>  <!-- Black Navigation Bar -->
+
+        <!-- Font & Typography -->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- Exclude button and edit text customization -->
+        <item name="android:buttonStyle">@null</item>
+        <item name="android:editTextStyle">@null</item>
+
     </style>
+
 </resources>

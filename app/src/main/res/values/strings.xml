@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">EkKoshishAUr</string>
-    <string name="welcome_user_please_sign_in_using_your_email_id_and_password_or_through_google_sign_in_to_begin">Welcome User, \nPlease sign in using your email id and password or through google sign in to \nbegin</string>
+    <string name="app_name">MrManager</string>
+    <string name="welcome">Welcome User,😊 \nPlease sign in using your email id and password or through google sign in to begin</string>
+    <string name="splashBanner">Why prefer excel when you\nhave Mr.Manager</string>
+    <string name="data">By clicking you are agree with the Terms and\nCondition</string>
+    <string name="signUp">What 😲, not a user till now…</string>
 </resources>

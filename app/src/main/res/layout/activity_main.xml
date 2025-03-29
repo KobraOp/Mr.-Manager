@@ -62,9 +62,9 @@
 
             <TextView
                 android:id="@+id/bannerIntro"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome_user_please_sign_in_using_your_email_id_and_password_or_through_google_sign_in_to_begin"
+                android:text="@string/welcome"
                 android:textSize="15sp"
                 android:textColor="@color/notBlack"
                 android:fontFamily="@font/droid_serif"
@@ -154,6 +154,40 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/signUpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signUp"
+                android:textSize="15sp"
+                android:textColor="@color/waveBalck"
+                android:textStyle="bold"
+                android:fontFamily="@font/droid_serif"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordLine"
+                android:layout_marginTop="15dp"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/signup_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signUpText"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+
+
+            </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

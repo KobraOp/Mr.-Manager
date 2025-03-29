@@ -1,0 +1,27 @@
+<resources>
+    <style name="CustomButton" parent="android:Widget.Button">
+        <!-- Remove Material tinting and color enforcement -->
+        <item name="android:backgroundTint">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:backgroundTintMode">src_in</item>
+
+        <!-- Custom background -->
+        <item name="android:background">@drawable/button_shifter</item>
+
+        <!-- Custom text color -->
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- Remove button elevation and default padding -->
+        <item name="android:elevation">0dp</item>
+        <item name="android:padding">12dp</item>
+
+        <!-- Remove ripple effect -->
+        <item name="android:foreground">@null</item>
+
+        <!-- Eliminate insets for flat look -->
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+</resources>
