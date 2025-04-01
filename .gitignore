@@ -8,6 +8,7 @@
 /.externalNativeBuild
 /.settings
 /app/google-services.json
+secrets.properties
 *.iml
 
 # Ignore generated APKs & logs

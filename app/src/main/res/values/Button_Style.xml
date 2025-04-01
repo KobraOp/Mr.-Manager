@@ -6,7 +6,7 @@
         <item name="android:backgroundTintMode">src_in</item>
 
         <!-- Custom background -->
-        <item name="android:background">@drawable/button_shifter</item>
+        <item name="android:background">@drawable/signup_button</item>
 
         <!-- Custom text color -->
         <item name="android:textColor">#FFFFFF</item>

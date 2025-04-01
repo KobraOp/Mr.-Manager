@@ -1,3 +1,19 @@
+import java.util.Properties
+import java.io.FileInputStream
+
+// Load properties safely
+val secretProperties = Properties()
+val secretPropertiesFile = rootProject.file("secrets.properties")
+
+if (secretPropertiesFile.exists()) {
+    FileInputStream(secretPropertiesFile).use { secretProperties.load(it) }
+} else {
+    println("⚠️ Warning: secrets.properties file not found!")
+}
+
+// Debugging output (shows in Gradle console)
+println("🔹 Loaded WEB_CLIENT_ID: ${secretProperties["WEB_CLIENT_ID"] ?: "NOT FOUND"}")
+
 plugins {
     alias(libs.plugins.android.application)
     id("com.google.gms.google-services")
@@ -13,9 +29,11 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "WEB_CLIENT_ID", "\"${secretProperties["WEB_CLIENT_ID"] ?: ""}\"")
     }
+
 
     buildTypes {
         release {
@@ -25,11 +43,10 @@ android {
                 "proguard-rules.pro"
             )
         }
-        buildFeatures{
-            dataBinding{
-                dataBinding = true
-                viewBinding = true
-            }
+        buildFeatures {
+            buildConfig = true // ✅ Ensures `BuildConfig` is generated
+            dataBinding = true
+            viewBinding = true
         }
     }
     compileOptions {
@@ -41,8 +58,8 @@ android {
 dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
-    implementation (libs.firebase.auth)
-    implementation (libs.play.services.auth)
+    implementation(libs.firebase.auth)
+    implementation(libs.play.services.auth)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

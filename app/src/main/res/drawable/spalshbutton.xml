@@ -2,8 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <solid
-        android:color="@color/waveBalck"/>
+        android:color="@color/white"/>
+
     <corners
-        android:radius="20dp"/>
-    
+        android:radius="40dp"/>
 </shape>

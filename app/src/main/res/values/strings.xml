@@ -3,5 +3,8 @@
     <string name="welcome">Welcome User,😊 \nPlease sign in using your email id and password or through google sign in to begin</string>
     <string name="splashBanner">Why prefer excel when you\nhave Mr.Manager</string>
     <string name="data">By clicking you are agree with the Terms and\nCondition</string>
-    <string name="signUp">What 😲, not a user till now…</string>
+    <string name="signUp">What 😲, not joined till now ! Click to Join Us</string>
+    <string name="continue_with_google">Continue with google</string>
+    <string name="continue_with_email">Continue with email</string>
+    <string name="your_key_of_proper_management">Your Key of Proper Management</string>
 </resources>
